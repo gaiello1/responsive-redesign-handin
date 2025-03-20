@@ -1,0 +1,189 @@
+
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Persona and Storyboarding</title>
+      <!-- import CSS styles -->
+      <link rel="stylesheet" href="styles.css" /> 
+      <link rel="shortcut icon" type="image/png" href="./assets/favicon.png">
+    </head>
+
+    <body>
+      <!--The following block of code was found on https://css-tricks.com/snippets/svg/curved-text-along-path/-->
+      <svg viewBox="0 0 500 150">
+        <path id="curve" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97" />
+        <text width="500">
+          <textPath alignment-baseline="top" xlink:href="#curve">
+            Redesigning a website!
+          </textPath>
+        </text>
+      </svg>
+
+      <div class="button-container">
+        <!--The following block of code was found on https://stackoverflow.com/questions/16349490/html-css-buttons-that-scroll-down-to-different-div-sections-on-a-webpage-->
+      <input class="styled" type="button" value="Lets learn more!" onClick="document.getElementById('text').scrollIntoView();" />
+      </div>
+      <br>
+
+      
+      <div id="text">
+        <p> I will be picking one page of a website, identifying problems, and then redesigning it! </p>
+      </div>
+      <br>
+
+      <div class="image-cards">
+        <img src="./assets/screenshot1.png" style="width:100%">
+        <img src="./assets/Screenshot2.png" style="width:100%">
+      </div>
+      <br>
+      <div class="button-container">
+        <input class="styled1" type="button" value="Click here for the page I'll be redesigning" onClick="location.href='another-page.html'" />
+      </div>
+      <br>
+      
+      <h2>Why this page?</h2>
+      <div id="text">
+        <p>I chose this website because I think the header and footer can be improved easily, and their design 
+          isn’t really seamless. I feel like this application page can be updated to match other recently, well 
+          designed applications.
+          </p>
+      </div>
+      <br>
+
+      <h2>Some problems</h2>
+
+      <h2>Efficiency:</h2>
+      <div id="left-text">
+          <ul>
+            <li>I think the submit button should be centered or on the right side.</li>
+            <li>I want to explore how it would look if all the options were aligned in columns rather than two in a row. That way the user can just scan vertically.</li>
+          </ul>
+      </div>
+
+      <h2>Learnability:</h2>
+      <div id="left-text">
+          <ul>
+            <li>
+              I think the website does a good job describing what to do at each question. However, for the questions with options, I plan to make them radio buttons.</li>
+          </ul>
+      </div>
+
+      <h2>Memorability:</h2>
+      <div id="left-text">
+          <ul>
+            <li>
+              The header and heading area doesn’t do a great job creating a memorable brand for the New England Aquarium. I plan to fix the header and footer areas to
+               make the design more consistent. There are two of the same logos and one of them does not match the background color.  
+            </ul>
+      </div>
+
+      <h2>Accessibility Problems:</h2>
+      <div id="left-text">
+          <ul>
+            <li>While using WebAIM WAIVE, a few contrast problems were detected between the text and background colors. This is for when phrases like “Select option” were
+               written in the text box. I think it might be okay because the box is empty and it might seem intuitive to click to select the option.</li>
+            <li>Another problem was that the contrast was low where you could select what page you wanted to go to. I agree, this could be fixed. </li>
+            <li> Lastly, the website is missing a first level heading. I think this could be fixed. </li>
+           <li>It seems like the website is well done in terms of aria labels.</li>
+          </ul>
+      </div>
+    
+      <br>
+
+      <h2>Current conceptual model</h2>
+      <div class="flex-container">
+        <div><img class="solo-image" src="./assets/conceptualmodel.png"/></div>
+      </div>
+      <br>
+
+      <h2>My inspiration:</h2>
+      <div class="flex-container">
+        <div><img class="solo-image" src="./assets/inspiration.png"/></div>
+      </div>
+      <br>
+
+      <h2>Visual style guide:</h2>
+      <div class="flex-container">
+        <div><img class="solo-image" src="./assets/Svisualstyleguide.png"/></div>
+      </div>
+
+      <br>
+
+
+
+
+      <h2>Here is what I asked...</h2>
+      <table>
+        <tr>
+          <th> </th>
+          <th>Questions</th>
+          <th>Summary of Responses</th>
+        </tr>
+        <tr>
+          <th>1.</th>
+          <td>How often do you use your key vs keypad to unlock the door?
+          </td>
+          <td> There is another door to the apartment building that does not have a keypad. It automatically
+             locks so the user needs to have a set of keys accessible a few moments prior to unlocking the 
+             unit door. But to get into the unit door specifically, the keypad is used.</td>
+        </tr>
+        <tr>
+          <th>2.</th>
+          <td>How many attempts at unlocking the door do you average before it unlocks?</td>
+          <td>The users mainly unlock the door on the first try.</td>
+        </tr>
+        <tr>
+          <th>3.</th>
+          <td>How do you feel about the size of the buttons?</td>
+          <td>The users are happy with the size of the buttons.</td>
+        </tr>
+        <tr>
+          <th>4.</th>
+          <td>Are you able to differentiate between the noises for an incorrect and correct entry?</td>
+          <td>The users note there is beep when the code is entered incorrectly.</td>
+        </tr>
+        <tr>
+          <th>5.</th>
+          <td>Can you tell when the door is unlocked vs locked from the outside?</td>
+          <td> The users cannot tell, however, the users feel it is okay that it is not displayed to other people 
+            passing by when their door is unlocked. For a typical door lock, it is not clear if the door is locked 
+            unless you try the door, and the same principle applies here.</td>
+        </tr>
+        <tr>
+          <th>6.</th>
+          <td>How do you feel about the security of the lock?</td>
+          <td>The users responded they felt the security of the door was good and no issue was raised. They explained
+             that maintenance people from the apartment building staff  have the code.</td>
+        </tr>
+      </table>
+      <br>
+
+      <div id="text">
+        <p> Then I made two empathy maps based on my observations and interviews.</p>
+      </div>
+      <br>
+
+      <h2>Meet Betty and Neil...</h2>
+      <div class="image-cards">
+        <img src="./assets/betty.jpg" style="width:100%">
+        <img src="./assets/neil.jpg" style="width:100%">
+      </div>
+      <br>
+      
+      <h2>Lets take a closer look at Betty's journey...</h2>
+      <div class="flex-container">
+        <div><img class="solo-image" src="./assets/storyboard.png"/></div>
+      </div>
+      <br>
+
+      <div id="text">
+        <p>I was surprised to find people were relatively satisfied with the interface. This makes sense since
+          the keypad lock is popular these days, especially as remote controlled door locks become more 
+          common with security systems.</p>
+      </div>
+      <br>
+      
+      <h3>Created by Gianna Aiello</h3>
+
+  </html>
